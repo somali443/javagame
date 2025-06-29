@@ -27,6 +27,7 @@ public class Player extends Entity{
 		direction = "Stand";
 	}
 	public void getPlayerImagre() {
+<<<<<<< HEAD
 		try {
 			Stand =  ImageIO.read(getClass().getResourceAsStream("/player/kalashnikov pendragonpixel.png"));
 			up1 = ImageIO.read(getClass().getResourceAsStream("/player/back1.png"));
@@ -44,6 +45,25 @@ public class Player extends Entity{
 		}catch(IOException e) {
 			e.printStackTrace();
 		}
+=======
+//		try {
+			Stand =  ImageIO.read(getClass().getResourceAsStream("/res/player/kalashnikov pendragonpixel.png"));
+			up1 = ImageIO.read(getClass().getResourceAsStream("/res/player/back1.png"));
+			up =ImageIO.read(getClass().getResourceAsStream("/res/player/back.png"));
+			up2 = ImageIO.read(getClass().getResourceAsStream("/res/player/back2.png"));
+			down = ImageIO.read(getClass().getResourceAsStream("/res/player/down1.5.png"));
+			down1 = ImageIO.read(getClass().getResourceAsStream("/res/player/down1.png"));
+			down2 = ImageIO.read(getClass().getResourceAsStream("/res/player/down2.png"));
+			left1 = ImageIO.read(getClass().getResourceAsStream("/res/player/ngangSangtrai1.png"));
+			StandstillLeft = ImageIO.read(getClass().getResourceAsStream("/res/player/ngangDungYenhuongbentrai.png"));
+			left2 = ImageIO.read(getClass().getResourceAsStream("/res/player/ngangSangtrai2.png"));
+			right1 = ImageIO.read(getClass().getResourceAsStream("/res/player/ngangSangphai1.png"));
+			StandstillRight = ImageIO.read(getClass().getResourceAsStream("/res/player/ngangDungYenhuongbenphai.png"));
+			right2 = ImageIO.read(getClass().getResourceAsStream("/res/player/ngangSangphai2.png"));
+//		}catch(IOException e) {
+//			e.printStackTrace();
+//		}
+>>>>>>> a14dfad (cap nhat)
 	}
 	
 	public void update() {
